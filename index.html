@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Rosa Da Silva - Programador Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #7c5fff, #7c5fff);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        
+        .main-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .main-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 6px solid #7c5fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            color: #03080e;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .subtitle {
+            color: #7c5fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .bio {
+            color: #000000;
+            font-size: 1.1rem;
+            font-weight: 300;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #34495e;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #7c5fff;
+            padding-bottom: 0.5rem;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .journey-text {
+            color: #34495e;
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+        
+        .interests-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+        
+        .interests-list li {
+            background-color: #ecf0f1;
+            color: #34495e;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .interests-list li:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .social-button {
+            background-color: #7c5fff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .social-button:hover {
+            background-color: #800080;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 600px) {
+            .main-card {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-button {
+                width: 200px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <!-- Foto de perfil real -->
+        <img class="profile-pic" src="Arthur.jpeg">
+        
+        <h1>Arthur Rosa Da Silva</h1>
+        <p class="subtitle">Desenvolvedor Python & Entusiasta de Tecnologia</p>
+        
+        <p class="bio">
+            Sou estudante de Python apaixonado por tecnologia e programação. Gosto de aprender sobre automação, desenvolvimento de aplicativos e soluções que facilitam o dia a dia. Sempre buscando evoluir e criar projetos cada vez mais completos.
+        </p>
+
+        <h2 class="section-title">Minha Jornada</h2>
+        <p class="journey-text">
+            Minha jornada na programação começou com a curiosidade sobre como as coisas funcionam por trás das telas. Desde então, tenho me dedicado ao aprendizado de Python e suas aplicações, explorando desde automação de tarefas até o desenvolvimento de aplicações mais complexas. A cada novo projeto, busco aprimorar minhas habilidades e contribuir com soluções inovadoras.
+        </p>
+        
+        <h2 class="section-title">Habilidades</h2>
+        <ul class="interests-list">
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-robot"></i> Automação</li>
+            <li><i class="fas fa-code"></i> Desenvolvimento Web</li>
+            <li><i class="fas fa-database"></i> SQL</li>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+            <li><i class="fas fa-lightbulb"></i> Resolução de Problemas</li>
+        </ul>
+
+        <h2 class="section-title">Conecte-se Comigo</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/3453art_" target="_blank" class="social-button">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.github.com/arthurRosaDaSilva" target="_blank" class="social-button">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://discord.com/invite/7vGWwH7eN5" target="_blank" class="social-button">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Adicionando interatividade simples
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Site do Arthur carregado com sucesso!');
+            
+            // Adicionar efeito de digitação à bio
+            const bio = document.querySelector('.bio');
+            const bioText = bio.textContent;
+            bio.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < bioText.length) {
+                    bio.textContent += bioText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 30);
+                }
+            };
+            
+            // Iniciar animação após um pequeno delay
+            setTimeout(typeWriter, 500);
+        });
+    </script>
+</body>
+</html>
